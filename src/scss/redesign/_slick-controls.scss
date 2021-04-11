@@ -1,0 +1,62 @@
+.feature-box-carousel__controls,
+.slick-controls {
+  @include under-xxl {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+  }
+  button {
+    position: absolute;
+    z-index: 9;
+    height: 82px;
+    width: 42px;
+    display: block;
+    box-sizing: content-box;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    top: 50%;
+    transform: translate3d(80%, -50%, 0);
+
+    svg {
+      height: 82px;
+      width: 42px;
+      display: block;
+    }
+
+    @include under-xxl {
+      + button {
+        margin-left: 3rem;
+      }
+
+      height: 41px;
+      width: 21px;
+
+      svg {
+        height: 41px;
+        width: 21px;
+      }
+    }
+
+    &.prev {
+      left: -42px;
+      transform: translate3d(-80%, -50%, 0);
+      @include under-xxl {
+        transform: none;
+      }
+    }
+
+    &.next {
+      right: -42px;
+    }
+
+    @include under-xxl {
+      position: static;
+      transform: none;
+    }
+
+    &[aria-disabled="true"] {
+      display: none;
+    }
+  }
+}

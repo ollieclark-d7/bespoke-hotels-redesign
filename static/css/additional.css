@@ -1,0 +1,142 @@
+::selection {
+  background-color: #e13300;
+  color: white;
+}
+::moz-selection {
+  background-color: #e13300;
+  color: white;
+}
+::webkit-selection {
+  background-color: #e13300;
+  color: white;
+}
+.ui-menu {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: block;
+  width: 227px;
+}
+.ui-menu .ui-menu {
+  margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px;
+}
+.ui-menu .ui-menu-item a {
+  text-decoration: none;
+  display: block;
+  padding: 0.2em 0.4em;
+  line-height: 1.5;
+  zoom: 1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+  margin: -1px;
+}
+.autocomplete-suggestions {
+  border: 1px solid #999;
+  background: #fff;
+  overflow: auto;
+}
+.autocomplete-suggestion {
+  padding: 2px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.autocomplete-selected {
+  background: #f0f0f0;
+}
+.autocomplete-suggestions strong {
+  font-weight: normal;
+  color: #39f;
+}
+.autocomplete-group {
+  padding: 2px 5px;
+}
+.autocomplete-group strong {
+  display: block;
+  border-bottom: 1px solid #000;
+}
+.ui-menu .ui-menu-item:hover {
+  border: 0;
+  background-color: #e13300;
+  color: #fff;
+  cursor: pointer;
+}
+.ui-menu .ui-state-active {
+  border: 0;
+  background-color: #e13300;
+}
+.ui-autocomplete-category.ui-menu-item,
+.ui-autocomplete-category.ui-menu-item:hover {
+  background-color: #cbcbcb;
+  color: #000;
+  cursor: default;
+}
+.rectangle .property .property-details .requestButton:hover {
+  color: #cf9845;
+  background-color: transparent;
+}
+.rectangle .property .property-details .requestButton {
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 20px;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#relevant-properties-listed .buttons-container .requestButton,
+.rectangle .property .property-details .requestButton {
+  background-color: #5dd786;
+  border: 2px solid #5dd786;
+}
+.square .property .property-details .requestButton {
+  font-weight: 600;
+  text-align: center;
+  padding: 4px 12px;
+  color: #fff;
+  display: inline-block;
+  background-color: #5dd786;
+  border: 2px solid #5dd786;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.square .property .property-details .requestButton:hover {
+  color: #5dd786;
+  background-color: transparent;
+}
+.featured-places .place {
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding: 119px 10px 10px;
+  min-height: 383px;
+  z-index: 600;
+}
+.crossed_out {
+  text-decoration: line-through;
+  color: #e3e3e3;
+  font-size: 0.8em;
+}
+#loginform .error p,
+#register_form .error p {
+  color: red;
+}
+label input[type="checkbox"] {
+  margin-top: 0;
+}
+.spinner {
+  margin-top: 4px;
+  max-height: 45px;
+}
+.priv-offer h3 {
+  margin-top: 0;
+}

@@ -1,0 +1,244 @@
+.feature-box {
+  position: relative;
+  padding-bottom: 60px;
+  display: flex;
+
+  @include under-md {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .feature-box__dropdown {
+    select {
+      padding: 8px 30px 8px 10px;
+      font-style: italic;
+      font-weight: 300;
+    }
+  }
+
+  .feature-box__image {
+    max-width: 80%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @include under-md {
+      max-width: 100%;
+    }
+  }
+
+  .feature-box__info {
+    position: absolute;
+    background-color: $gold;
+    text-align: center;
+    color: white;
+    max-width: 38%;
+    bottom: 0;
+    right: 0;
+    padding: 4rem;
+
+    @include under-md {
+      position: relative;
+      max-width: 100%;
+      padding: 3rem;
+    }
+
+    h3 {
+      font-family: "ITC New Baskerville", serif;
+      color: white;
+      font-size: 34px;
+      margin-top: 0;
+      margin-bottom: 30px;
+      line-height: 1;
+
+      @include under-md {
+        font-size: 30px;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 52px;
+        height: 2px;
+        background-color: white;
+        margin: 15px auto 0;
+      }
+    }
+
+    .feature-box__link {
+      color: white;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+
+      i {
+        margin-left: 5px;
+        font-size: 10px;
+      }
+    }
+
+    p {
+      color: white;
+      font-weight: 300;
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+      font-size: 16px;
+
+      @include under-lg {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &.feature-box--right {
+    justify-content: flex-end;
+
+    .feature-box__info {
+      left: 0;
+      right: unset;
+    }
+  }
+
+  &.feature-box--slide {
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    .feature-box__image {
+      max-width: 100%;
+    }
+
+    .feature-box__image {
+      @include under-md {
+        img {
+          height: 400px;
+          object-fit: cover;
+        }
+      }
+
+      @include under-sm {
+        img {
+          height: 300px;
+        }
+      }
+    }
+
+    .feature-box__info {
+      position: relative;
+      margin-top: -100px;
+      max-width: unset;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      right: unset;
+
+      @include under-lg {
+        margin-top: -50px;
+        h3 {
+          font-size: 24px;
+        }
+      }
+
+      @include under-md {
+        margin-top: -170px;
+      }
+
+      @include under-sm {
+        margin-top: -120px;
+        width: 85%;
+      }
+
+      @include under-md {
+        padding: 3rem 2rem;
+      }
+    }
+
+    &.feature-box--slide-alt {
+      flex-direction: column-reverse;
+
+      .feature-box__info {
+        margin-top: 0;
+        margin-bottom: -100px;
+
+        @include under-lg {
+          margin-bottom: -50px;
+        }
+
+        @include under-md {
+          margin-bottom: -170px;
+        }
+
+        @include under-sm {
+          margin-bottom: -120px;
+        }
+      }
+    }
+  }
+}
+
+.feature-box-carousel {
+  @include under-lg {
+    overflow: hidden;
+  }
+  .slick-slide {
+    padding: 0 20px;
+  }
+
+  .slick-list {
+    margin: 0 -20px;
+  }
+
+  .slick-dots {
+    @include under-md {
+      margin-top: 2rem;
+    }
+    margin-left: auto;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      text-indent: -99999;
+
+      + li {
+        margin-left: 10px;
+      }
+
+      button {
+        border-radius: 0;
+        height: 18px;
+        width: 18px;
+        text-indent: -99999px;
+        display: block;
+        box-shadow: none;
+        border: 1px solid #707070;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: #aeaeae;
+        }
+      }
+
+      &.slick-active {
+        button {
+          background-color: #49484d;
+          border-color: #49484d;
+        }
+      }
+    }
+  }
+}
+
+.feature-box-carousel,
+.recently-viewed-carousel {
+  position: relative;
+}

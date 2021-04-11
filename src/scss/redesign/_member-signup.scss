@@ -1,0 +1,85 @@
+.dark-bg {
+  background-color: #2a2a2a;
+}
+
+.member-sign-up {
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  #input-recaptcha {
+    margin: 0;
+  }
+
+  input {
+    background-color: white;
+    border: none;
+    height: 48px;
+    color: #808080;
+  }
+
+  input#email {
+    @include above-md {
+      margin-top: 10px;
+    }
+  }
+
+  label {
+    font-weight: 300;
+    a {
+      color: white;
+    }
+  }
+
+  h3 {
+    font-family: $italic;
+  }
+
+  h3,
+  p {
+    color: white;
+  }
+
+  .d-flex {
+    @include above-md {
+      display: flex;
+    }
+  }
+
+  .flex-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .recaptcha-container {
+    display: flex;
+    overflow: hidden;
+
+    @include under-md {
+      display: block;
+    }
+
+    > div {
+      &:last-child {
+        flex-grow: 1;
+        margin-left: 20px;
+
+        @include under-md {
+          margin-left: 0;
+        }
+
+        button {
+          margin: 0;
+          width: 100%;
+
+          @include under-md {
+            width: auto;
+            margin-left: 0;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

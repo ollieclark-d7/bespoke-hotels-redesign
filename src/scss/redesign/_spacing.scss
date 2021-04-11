@@ -1,0 +1,47 @@
+.pt {
+  padding-top: 9rem;
+
+  @include under-lg {
+    padding-top: 7rem;
+  }
+
+  @include under-md {
+    padding-top: 5rem;
+  }
+
+  &.pt--small {
+    padding-top: 4rem;
+
+    @include under-lg {
+      padding-top: 4rem;
+    }
+
+    @include under-md {
+      padding-top: 3rem;
+    }
+  }
+}
+
+.pb {
+  padding-bottom: 9rem;
+
+  @include under-lg {
+    padding-bottom: 7rem;
+  }
+
+  @include under-md {
+    padding-bottom: 5rem;
+  }
+}
+
+.mt {
+  margin-top: 9rem;
+
+  @include under-lg {
+    margin-top: 7rem;
+  }
+
+  @include under-md {
+    margin-top: 5rem;
+  }
+}

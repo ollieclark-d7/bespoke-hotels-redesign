@@ -1,0 +1,45 @@
+.border-title {
+  text-align: center;
+
+  h2,
+  h3,
+  h4 {
+    font-family: "ITC New Baskerville", serif;
+    color: #49484d;
+    font-size: 46px;
+    line-height: 1;
+
+    @include under-md {
+      font-size: 32px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 52px;
+      height: 2px;
+      background-color: #49484d;
+      margin: 20px auto 0;
+    }
+  }
+
+  &.border-title--light {
+    h2,
+    h3,
+    h4 {
+      color: white;
+      &:after {
+        background-color: white;
+      }
+    }
+  }
+
+  &.border-title--small {
+    h4 {
+      font-size: 32px;
+      padding-left: 10px;
+      padding-right: 10px;
+      line-height: 1;
+    }
+  }
+}
