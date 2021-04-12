@@ -134,3 +134,71 @@
     }
   }
 }
+
+.home-hero {
+  &.home-hero--cc {
+    .home-hero__slide {
+      img {
+        max-height: 777px;
+        min-height: 400px;
+
+        @include above-md {
+          min-height: 630px;
+        }
+      }
+
+      .home-hero__overlay {
+        padding-top: 150px;
+
+        @include above-xl {
+          padding-top: 180px;
+        }
+
+        @include under-xl {
+          padding-top: 130px;
+        }
+      }
+    }
+
+    .booking-engine {
+      .search-outer {
+        input#area {
+          font-weight: 300;
+        }
+      }
+    }
+
+    .booking-options {
+      background-color: $teal;
+
+      @include above-md {
+        transform: translate3d(-50%, 30px, 0);
+        left: 50%;
+        max-width: 900px;
+      }
+
+      .booking-button {
+        background-color: $blue;
+        border-color: $blue;
+
+        &:hover {
+          background-color: white;
+          border-color: white;
+          span {
+            color: $blue;
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      li {
+        &.slick-active {
+          button {
+            background-color: $teal;
+          }
+        }
+      }
+    }
+  }
+}

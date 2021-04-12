@@ -83,3 +83,16 @@
     }
   }
 }
+
+.coast-country {
+  .member-sign-up .recaptcha-container > div:last-child button {
+    background-color: $teal;
+    border-color: $teal;
+
+    &:hover {
+      color: $teal;
+      background-color: white;
+      border-color: white;
+    }
+  }
+}

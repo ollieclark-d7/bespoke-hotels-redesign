@@ -1,8 +1,8 @@
-<div class="home-hero">
+<div class="home-hero home-hero--cc">
 
     <div class="js-home-hero">
         <div class="home-hero__slide">
-            <img src="images/golfcourse-header-1920x650.jpg" alt="Golf Course.">
+            <img src="images/coast-country-demo.jpg" alt=".">
             <div class="home-hero__overlay">
                 <h2>Enjoy a Winter Escape at the<br>Talbot in charming Surrey</h2>
                 <p>From just £99 per room including Voucher to spend on your choice of Food & Drinks during your stay
@@ -12,7 +12,7 @@
         </div>
 
         <div class="home-hero__slide">
-            <img src="images/hero-2-test.jpg" alt="Golf Course.">
+            <img src="images/coast-country-demo.jpg" alt=".">
             <div class="home-hero__overlay">
                 <h2>Enjoy a Winter Escape at the<br>Talbot in charming Surrey</h2>
                 <p>From just £99 per room including Voucher to spend on your choice of Food & Drinks during your stay
@@ -47,7 +47,13 @@
                 <form action="/search" method="POST" id="search_form">
                     <div class="booking-engine bg-none">
 
-                        <h1>Your journey starts here</h1>
+                        <div class="booking-title">
+                            <h1>Your journey starts here</h1>
+                            <p class="booking-title__phone">
+                                <small>Central Reservations</small>
+                                0330 094 5919
+                            </p>
+                        </div>
                         <input type="hidden" name="booking_id" id="booking_id">
                         <input type="hidden" name="chain_id" id="chain_id">
                         <input type="hidden" name="hotel_id" id="hotel_id">

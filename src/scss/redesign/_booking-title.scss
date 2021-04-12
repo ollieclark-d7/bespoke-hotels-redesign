@@ -1,0 +1,30 @@
+.booking-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  padding-top: 5px;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .booking-title__phone {
+    color: white;
+    font-size: 24px;
+    text-align: right;
+
+    @include under-lg {
+      font-size: 20px;
+    }
+
+    small {
+      display: block;
+      font-size: 0.5833333333333334em;
+    }
+
+    @include under-sm {
+      display: none;
+    }
+  }
+}

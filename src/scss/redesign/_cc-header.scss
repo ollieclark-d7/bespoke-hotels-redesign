@@ -1,0 +1,44 @@
+.cc-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding-top: 20px;
+
+  &.nav-open {
+    position: fixed;
+  }
+
+  .hamburger {
+    display: none;
+
+    @include under-lg {
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      z-index: 999999;
+    }
+  }
+
+  @include under-lg {
+    text-align: center;
+    z-index: 9999;
+  }
+
+  .cc-mobile-logo {
+    display: none;
+
+    @include under-lg {
+      display: inline-block;
+      position: relative;
+      z-index: 9999;
+
+      img {
+        max-width: 120px;
+        height: auto;
+      }
+    }
+  }
+}
