@@ -145,7 +145,7 @@ const images = () =>
 // Watches all .scss, .js and .html changes and executes the corresponding task
 function watchFiles() {
   browserSync.init({
-    proxy: "http://localhost/bespoke-new/",
+    proxy: "http://localhost/bespoke-redesign/",
     ghostMode: false,
   });
 
@@ -163,7 +163,15 @@ function watchFiles() {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(unminstyles, styles, vendors, headscripts, scripts, images)
+  gulp.parallel(
+    unminstyles,
+    fonts,
+    styles,
+    vendors,
+    headscripts,
+    scripts,
+    images
+  )
 );
 
 const watch = gulp.series(build, watchFiles);
