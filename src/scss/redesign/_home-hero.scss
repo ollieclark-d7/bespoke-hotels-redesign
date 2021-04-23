@@ -64,6 +64,50 @@
       }
     }
   }
+
+  .home-hero__dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+     &:before, &:after {
+        display: none;
+      } 
+
+    .book-now-button {
+        max-width: 100%;
+        width: 348px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        align-self: flex-end;
+        justify-content: center;
+        text-decoration: none;
+        background-color: #d71923;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        padding: 0;
+
+        @media (max-width: 767px) {
+          width: 200px;
+          font-size: 15px;
+          height: 50px;
+        }
+
+        span {
+          color: white;
+          display: block;
+        }
+    }
+  }
 }
 
 .home-hero__slide {
@@ -201,4 +245,55 @@
       }
     }
   }
+}
+
+
+.home-hero {
+  &.home-hero--minisite {
+
+    .home-hero__slide {
+
+      img {
+        max-height: 697px;
+      }
+      &:before {
+        display: none;
+      }
+    }
+
+    .slick-dots {
+      position: relative;
+      bottom: unset;
+      right: unset;
+      text-align: left;
+      width: auto;
+
+      @media (max-width: 991px) {
+        position: absolute;
+        bottom: -30px;
+        left: 15px;
+      }
+
+      li {
+        margin-bottom: 0;
+        font-size: 0;
+
+        button {
+          width: 29px;
+          height: 11px;
+          margin-bottom: 0;
+        }
+
+        + li {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.cc-brand {
+.home-hero .slick-dots li.slick-active button {
+  background-color: $teal;
+}
 }

@@ -1,0 +1,21 @@
+.header-flex {
+    display: flex;
+    align-items: center;
+
+    .callback {
+        color: white;
+        margin-right: 40px;
+        display: block;
+        height: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-left: 25px;
+        background-image: url('../../images/phone.svg');
+        background-size: 13.33px 20px;
+        background-repeat: no-repeat;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.ms-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .ms-buttons__item {
+        font-family: "ITC New Baskerville",serif;
+        font-size: 24px;
+        border-bottom: 1px dashed #49484D;
+        padding: 10px 50px 10px 0;
+        background-image: url('../../images/download.svg');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 20px 20px;
+        color: #49484D;
+        white-space: nowrap;
+        margin-right: 30px;
+        margin-bottom: 20px;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

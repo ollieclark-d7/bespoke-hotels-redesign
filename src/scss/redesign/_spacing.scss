@@ -22,6 +22,30 @@
   }
 }
 
+.pt--sm {
+  padding-top: 6rem;
+
+  @include under-lg {
+    padding-top: 5rem;
+  }
+
+  @include under-md {
+    padding-top: 3rem;
+  }
+
+  &.pt--small {
+    padding-top: 3rem;
+
+    @include under-lg {
+      padding-top: 3rem;
+    }
+
+    @include under-md {
+      padding-top: 2rem;
+    }
+  }
+}
+
 .pb {
   padding-bottom: 9rem;
 
@@ -31,6 +55,18 @@
 
   @include under-md {
     padding-bottom: 5rem;
+  }
+
+  &.pb--small {
+    padding-bottom: 3rem;
+
+    @include under-lg {
+      padding-bottom: 3rem;
+    }
+
+    @include under-md {
+      padding-bottom: 2rem;
+    }
   }
 }
 

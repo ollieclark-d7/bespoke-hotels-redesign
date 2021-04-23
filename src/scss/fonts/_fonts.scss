@@ -8,3 +8,14 @@
     url("../fonts/NewBaskerville-Italic.ttf") format("truetype"),
     url("../fonts/NewBaskerville-Italic.svg#ITC New Baskerville") format("svg");
 }
+
+@font-face {
+  font-family: 'AvantGarde Normal';
+  src: url('../fonts/AvantGardeITCbyBT-Book.woff2') format('woff2'),
+      url('../fonts/AvantGardeITCbyBT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+

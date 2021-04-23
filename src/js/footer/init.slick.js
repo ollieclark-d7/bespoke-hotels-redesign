@@ -70,6 +70,7 @@
   }
 
   const $hero = $(".js-home-hero");
+  const $dots = $(".home-hero__dots");
 
   if ($hero.length) {
     $hero.slick({
@@ -80,4 +81,58 @@
       dots: true,
     });
   }
+
+  if ( $dots.length ) {
+    $hero.slick('slickSetOption', 'appendDots', $dots, true);
+  }
+
+  const $awards = $(".awards-carousel");
+
+  if ($awards.length) {
+    var awards_controls = $awards.find(".slick-controls");
+    var awards_prev = awards_controls.find(".prev");
+    var awards_next = awards_controls.find(".next");
+    var awards_carousel = $awards.find(".js-awards-carousel");
+
+    if (awards_carousel.length) {
+      awards_carousel.slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        centerMode: true,
+        infinite: true,
+        dots: false,
+        prevArrow: awards_prev,
+        nextArrow: awards_next,
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 580,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 380,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    }
+  }
+  
+
+
 })(jQuery);

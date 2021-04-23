@@ -1,0 +1,119 @@
+.ms-menu {
+    border-bottom: 1px solid #E5E5E5;
+    margin-top: 3rem;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+
+    @media (min-width: 992px) {
+        display: block !important;
+    }
+
+    .ms-menu__list {
+        margin: 0;
+
+        li {
+            display: inline-block;
+            font-size: 0;
+            margin-bottom: 0;
+            margin-right: 30px;
+
+            @media (max-width: 991px) {
+                display: block;
+                margin-right: 0;
+                
+
+                &:first-child {
+                    a {
+                        padding-top: 0;
+                    }
+                }
+            }
+
+            a {
+                font-size: 18px;
+                color: #141414;
+                display: block;
+                padding: 20px 2px 10px;
+                position: relative;
+
+                @media (max-width: 991px) {
+                    font-size: 16px;
+                    padding-top: 14px;
+                    padding-bottom: 10px;
+                }
+
+                &:after {
+                    content: '';
+                    height: 4px;
+                    width: 100%;
+                    background-color: $red;
+                    position: absolute;
+                    display: block;
+                    bottom: -4px;
+                    left: 0;
+                    transform: scaleX(0);
+                    transition: transform .15s ease;
+
+                    @media (max-width: 991px) {
+                       bottom: 0;
+                       height: 2px;
+                    }
+                }
+
+                &:hover, &:focus, &:active {
+                    text-decoration: none;
+
+                    &:after {
+                        transform: scaleX(1);
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            &.active {
+                a {
+                    &:after {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hamburger-container {
+    display: none;
+    background: #49484d;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    > .container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .hamburger {
+        padding-left: 0;
+    }
+
+    @media (max-width: 991px) {
+        display: block;
+    }
+
+    p {
+        color: white;
+        font-size: 16px;
+    }
+}
+
+
+.cc-brand {
+    .ms-menu .ms-menu__list li a:after {
+        background-color: $teal;
+    }
+}

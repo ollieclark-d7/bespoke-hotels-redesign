@@ -33,7 +33,7 @@
                 <img src="images/cc-logo.png" alt="Coast and Country.">
             </a>
 
-            <button class="hamburger hamburger--slider js-hamburger" type="button">
+            <button class="hamburger hamburger--slider js-nav-toggle" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>

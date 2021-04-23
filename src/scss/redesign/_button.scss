@@ -1,0 +1,22 @@
+.button {
+    max-width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #d71923;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px 40px;
+    align-self: center;
+
+    &.button--long {
+        width: 420px;
+    }
+
+    &.button--teal {
+        background-color: $teal;
+    }
+}

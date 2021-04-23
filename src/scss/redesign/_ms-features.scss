@@ -1,0 +1,33 @@
+.ms-features {
+    display: flex;
+    margin-top: 3.5rem;
+    flex-wrap: wrap;
+
+    .ms-features__item {
+        display: flex;
+        align-items: center;
+        margin-right: 34px;
+        margin-bottom: 15px;
+        font-size: 16px;
+
+        @media (max-width: 991px) {
+            font-size: 14px;
+        }
+        
+        span {
+            font-weight: 600;
+        }
+
+
+        i {
+            max-width: 23px;
+            display: block;
+            margin-right: 6px;
+
+            svg {
+                max-width: 23px;
+                height: auto;
+            }
+        }
+    }
+}

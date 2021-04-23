@@ -1,6 +1,6 @@
 (function ($) {
   const nav = $(".cc-nav__list");
-  const hamburger = $(".js-hamburger");
+  const hamburger = $(".js-nav-toggle");
   const header = $(".cc-header");
 
   hamburger.on("click", function () {
@@ -22,4 +22,12 @@
     hamburger.removeClass("is-active");
     header.removeClass("nav-open");
   }
+
+  const ms_hamburger = $(".js-ms-hamburger");
+  const ms_menu = $(".ms-menu");
+
+  ms_hamburger.on('click', function() {
+    ms_menu.slideToggle();
+  });
+
 })(jQuery);
