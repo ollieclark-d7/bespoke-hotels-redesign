@@ -1184,6 +1184,25 @@ body:not(.user-is-tabbing) select:focus,
 body:not(.user-is-tabbing) textarea:focus {
   outline: none; }
 
+.booking-mask {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  display: none; }
+  .booking-mask > * {
+    padding: 1rem; }
+  .booking-mask .booking-mask-example {
+    margin: 0;
+    color: white;
+    padding-top: 8rem;
+    padding-bottom: 8rem; }
+
+.book-now.open .book-now-button .closed {
+  display: none; }
+
+.book-now.open .book-now-button .open {
+  display: block !important; }
+
 .booking-options h1 {
   text-align: left;
   font-family: "ITC New Baskerville", serif; }
@@ -1656,8 +1675,8 @@ body:not(.user-is-tabbing) textarea:focus {
             flex-direction: row-reverse;
     -webkit-box-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-            align-items: center; }
+    -webkit-box-align: end;
+            align-items: flex-end; }
     .home-hero .home-hero__dots:before, .home-hero .home-hero__dots:after {
       display: none; }
     .home-hero .home-hero__dots .book-now-button {
@@ -1794,12 +1813,14 @@ body:not(.user-is-tabbing) textarea:focus {
   bottom: unset;
   right: unset;
   text-align: left;
+  margin-bottom: 2rem;
   width: auto; }
   @media (max-width: 991px) {
     .home-hero.home-hero--minisite .slick-dots {
       position: absolute;
       bottom: -30px;
-      left: 15px; } }
+      left: 15px;
+      margin-bottom: 0; } }
   .home-hero.home-hero--minisite .slick-dots li {
     margin-bottom: 0;
     font-size: 0; }

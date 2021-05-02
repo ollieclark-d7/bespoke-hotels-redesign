@@ -12,9 +12,16 @@
     </div>
 
     <div class="home-hero__dots container container--retain-padding">
-        <a href="#" class="book-now-button" id="expand-booking-options">
-            <span class="closed">Book Now</span>
-            <span class="open hidden">Close</span>
-        </a>
+        <div class="book-now">
+            <a href="#" class="book-now-button" id="expand-booking-options">
+                <span class="closed">Book Now</span>
+                <span class="open hidden">Close</span>
+            </a>
+            <div class="booking-mask">
+                <p class="booking-mask-example">
+                    Booking stuff goes here
+                </p>
+            </div>
+        </div>
     </div>
 </div>

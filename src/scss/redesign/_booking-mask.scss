@@ -1,0 +1,31 @@
+.booking-mask {
+    background: rgba(0,0,0,0.4);
+    color: white;
+    text-align: center;
+    display: none;
+
+    > * {
+        padding: 1rem;
+    }
+
+    .booking-mask-example {
+        margin: 0;
+        color: white;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.book-now {
+    &.open {
+        .book-now-button {
+            .closed {
+                display: none;
+            }
+
+            .open {
+                display: block !important;
+            }
+        }
+    }
+}
