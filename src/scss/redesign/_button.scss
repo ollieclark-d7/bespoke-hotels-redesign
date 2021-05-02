@@ -18,5 +18,13 @@
 
     &.button--teal {
         background-color: $teal;
+        border: 2px solid $teal;
+        transition: all .15s ease-out;
+
+        &:hover {
+            background-color: white;
+            color: $teal;
+            text-decoration: none;
+        }
     }
 }

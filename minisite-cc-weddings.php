@@ -104,7 +104,8 @@
             <div class="cms-content">
                 <div class="ms-content ms-content--flex pt pt--small">
                     <h2>Your Wedding at the St George Hotel</h2>
-                    <a href="#" class="button button--teal button--long">Check Availability</a>
+                    <a href="#" data-featherlight="#availability" class="button button--teal button--long">Check
+                        Availability</a>
                 </div>
 
                 <div class="ms-content pt pt--small">
@@ -266,6 +267,10 @@
 
     </div>
 
+</div>
+
+<div class="featherlight-modal" id="availability">
+    <img src="images/wedding-checker.png">
 </div>
 
 <?php include 'partials/footer.php'; ?>
