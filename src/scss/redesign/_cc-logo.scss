@@ -1,0 +1,36 @@
+.sticky-logo {
+    &.sticky-logo--cc {
+        img {
+            width: 200px;
+            height: auto;
+        }
+    }
+}
+
+.cc-mobile-logo {
+    img {
+        width: 300px;
+
+        @media (max-width: 767px) {
+            margin-top: 8px;
+        }
+    }
+}
+
+// .bespoke-hotels-menu {
+//     &.bespoke-hotels-menu--cc {
+//         ul {
+//             > li {
+//                 a {
+//                     color: #007EC5;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .header-cc {
+//     .header-flex .callback {
+//         color: #007EC5;
+//     }
+// }

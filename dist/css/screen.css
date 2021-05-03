@@ -1279,6 +1279,9 @@ html.with-featherlight {
       margin-right: auto;
       max-width: 100%; }
 
+.light-bg {
+  background-color: #F8F8F8; }
+
 body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) input:focus,
 body:not(.user-is-tabbing) select:focus,
@@ -1430,6 +1433,16 @@ body:not(.user-is-tabbing) textarea:focus {
         .cc-header .cc-mobile-logo img {
           max-width: 120px;
           height: auto; } }
+
+.sticky-logo.sticky-logo--cc img {
+  width: 200px;
+  height: auto; }
+
+.cc-mobile-logo img {
+  width: 300px; }
+  @media (max-width: 767px) {
+    .cc-mobile-logo img {
+      margin-top: 8px; } }
 
 .cc-nav {
   text-align: center; }
