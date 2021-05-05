@@ -1282,6 +1282,9 @@ html.with-featherlight {
 .light-bg {
   background-color: #F8F8F8; }
 
+.cc-dark-teal {
+  background-color: #0E4C4C; }
+
 body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) input:focus,
 body:not(.user-is-tabbing) select:focus,
@@ -1300,6 +1303,9 @@ body:not(.user-is-tabbing) textarea:focus {
     color: white;
     padding-top: 8rem;
     padding-bottom: 8rem; }
+
+.book-now .book-now-button {
+  margin-left: auto; }
 
 .book-now.open .book-now-button .closed {
   display: none; }
@@ -1933,7 +1939,7 @@ body:not(.user-is-tabbing) textarea:focus {
   display: none; }
 
 .home-hero.home-hero--minisite .slick-dots {
-  position: relative;
+  position: absolute;
   bottom: unset;
   right: unset;
   text-align: left;

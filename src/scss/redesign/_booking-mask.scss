@@ -17,6 +17,12 @@
 }
 
 .book-now {
+    .book-now-button {
+        margin-left: auto;
+    }
+}
+
+.book-now {
     &.open {
         .book-now-button {
             .closed {

@@ -19,7 +19,7 @@
             </a>
             <div class="booking-mask">
                 <p class="booking-mask-example">
-                    Booking stuff goes here
+                    Remove me and place booking stuff here, this will stretch to accomodate any height/width element.
                 </p>
             </div>
         </div>

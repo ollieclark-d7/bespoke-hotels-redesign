@@ -33,7 +33,7 @@
                 <div class="alert-row">
                     <a href="/pages/covid-19">COVID-19 - How we plan to welcome you back</a>
                 </div>
-                <div class="greybg">
+                <div class="cc-dark-teal">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -50,7 +50,7 @@
                                             </div>
                                             <div class="sticky-logo sticky-logo--cc">
                                                 <a href="/">
-                                                    <img src="images/cc-logo-variant.png">
+                                                    <img src="images/c&c-white.svg">
 
                                                 </a>
                                             </div>
@@ -63,14 +63,6 @@
                                                 </li>
 
                                                 <li class="link">
-                                                    <a href="https://bespokehotels.com/pages/about_us">Who we are</a>
-                                                </li>
-
-                                                <li class="link">
-                                                    <a href="https://bespokehotels.com/all-hotels">Our portfolio</a>
-                                                </li>
-
-                                                <li class="link">
                                                     <a href="http://messenger.providesupport.com/messenger/00mkej6pdtb6p1u2tfgtk05t34.html"
                                                         onclick="window.open(this.href, '', 'resizable=yes,status=yes,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=yes,dependent=no,width=645px,left=0px,height=680px,top=0px'); return false;"
                                                         title="Live help"><i class="glyphicon  bespoke-chat" "=""></i></a>
@@ -79,13 +71,11 @@
         </nav>
         <div class=" sticky-nav account-links-container">
                                                             <div class="header-flex">
-                                                                <a href="#" class="callback">
-                                                                    Request a callback
-                                                                </a>
+
                                                                 <div>
                                                                     <div class="cro-number-white">
-                                                                        <p>Central Reservations<br> <span>0844 815
-                                                                                9833</span>
+                                                                        <p>Central Reservations<br> <span>0330 094
+                                                                                5919</span>
                                                                         </p>
                                                                     </div>
                                                                     <ul class="account-nav" style="display:none;">
@@ -139,7 +129,7 @@
                     <div class="col-lg-4 col-md-5 col-sm-4 col-xs-6">
                         <div class="padding-20-0-0 padding-0-0-10 bespoke-hotels-logo">
                             <a href="https://bespokehotels.com/" class="cc-mobile-logo">
-                                <img src="images/cc-logo-variant-colour.png">
+                                <img src="images/c&c-colour.svg">
                             </a>
                         </div>
                     </div>
